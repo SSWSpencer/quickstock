@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "quickstock",
+	"version": "${version}",
+	"name": "QuickStock",
+	"description": "Client-side helper for QuickShop servers that scans nearby shops and tracks items that need restocking.",
+	"authors": [
+		"woody @ssws"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/quickstock/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.ssws.quickstock.QuickStockClient"
+		],
+		"modmenu": [
+			"com.ssws.quickstock.QuickStockModMenu"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
